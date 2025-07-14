@@ -9,6 +9,7 @@ import com.example.filmera.ui.screen.favorite.FavoriteScreen
 import com.example.filmera.ui.screen.home.DetailScreen
 import com.example.filmera.ui.screen.home.HomeScreen
 import com.example.filmera.ui.screen.home.ExploreScreen
+import com.example.filmera.ui.screen.home.ProfileScreen
 import com.example.filmera.ui.screen.home.MovieVideoScreen
 
 @Composable
@@ -18,13 +19,13 @@ fun MainNavigation(navController: NavHostController) {
       HomeScreen(navController)
     }
     composable(BottomNavItem.Explore.route) {
-       ExploreScreen(navController)
+       ExploreScreen()
     }
     composable(BottomNavItem.Favorite.route) {
        FavoriteScreen(navController)
     }
     composable(BottomNavItem.Profile.route) {
-      // ProfileScreen(navController)
+       ProfileScreen()
     }
 
     composable(
