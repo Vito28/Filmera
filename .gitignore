@@ -13,3 +13,9 @@
 .externalNativeBuild
 .cxx
 local.properties
+.env
+/supabase/.branches/
+/supabase/.temp/
+app/release/
+*.apk
+*.aab

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Filmera" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Filmera.Base" parent="android:Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">@color/filmera_neon</item>
+        <item name="android:navigationBarColor">@color/filmera_surface_lowest</item>
+        <item name="android:statusBarColor">@color/filmera_background</item>
+        <item name="android:windowBackground">@drawable/startup_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Filmera" parent="Theme.Filmera.Base" />
 </resources>
